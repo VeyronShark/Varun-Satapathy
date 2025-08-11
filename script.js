@@ -118,7 +118,7 @@ const marketingSkillsContainer = document.querySelector("#marketing-skills-conta
 const compSkills = [
   { skill: "HTML", type: "Web Development" },
   { skill: "CSS", type: "Web Design" },
-  { skill: "JavaScript", type: "Programming" },
+  { skill: "Javascript", type: "Programming" },
   { skill: "React", type: "Web UI Development" },
   { skill: "Tailwind CSS", type: "Web Design" },
   { skill: "GSAP", type: "Web Animations" },
@@ -163,7 +163,7 @@ compSkills.forEach(skill => {
   </div>
   `; 
   compSkillsContainer.appendChild(skillElement);
-});
+}); 
 
 marketingSkills.forEach(skill => {
   const skillElement = document.createElement("div");
