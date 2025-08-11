@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Parkinsans", sans-serif;
+
+  --color-white: #faf9f6;
+  --color-black: #131313;
+}
+
+.section-card {
+  @apply px-8 w-full md:h-screen pt-20;
+}
+
+.pc-nav-link {
+  @apply hover:underline active:text-teal-200;
+}
+
+.mb-nav-link {
+  @apply text-3xl w-50 text-center -translate-x-0 cursor-pointer active:text-teal-200;
+}
+
+.heading {
+  @apply text-4xl md:text-6xl py-3 md:py-5 lg:py-7;
+}
+
+.skills-container {
+  @apply flex flex-wrap gap-4 justify-center
+}
+.skill {
+  @apply flex justify-start items-center gap-4 border-2 border-gray-400 bg-[rgb(255,255,255)] rounded-xl py-4 px-6 shadow-xl w-[20rem] hover:-translate-y-1.5 hover:bg-gray-200 hover:border-black;
+}
+.skill img {
+  @apply w-14 h-14 rounded-full object-cover border-2 border-black bg-[rgb(255,255,255)];
+}
+.skill-desc {
+  @apply flex flex-col justify-center;
+}
+.skill-name {
+  @apply text-xl;
+}
+.skill-type {
+  @apply text-gray-500 text-sm;
+}
+
+.contact-link-button {
+  @apply w-1/4 text-center py-4 cursor-pointer rounded-t-md duration-200 hover:bg-white hover:shadow-[0_0_0.5rem_rgba(255,255,255,1)];
+}
+.contact-link-button i{
+  @apply duration-200;
+}
